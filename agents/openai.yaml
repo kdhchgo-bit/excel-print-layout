@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel Print Layout"
+  short_description: "Prepare readable A4 Excel prints safely"
+  default_prompt: "Use $excel-print-layout to prepare and verify readable A4 prints while preserving workbook data and hidden items."

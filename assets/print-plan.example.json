@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "request_fingerprint": "replace-with-a-fingerprint-of-the-current-request-and-scope",
+  "sheets": [
+    {
+      "name": "ExampleSheet",
+      "paper": "A4",
+      "orientation": "landscape",
+      "print_area": "$A$1:$H$20",
+      "scale": {"mode": "zoom", "percent": 100},
+      "margins_pt": {"top": 18, "bottom": 18, "left": 18, "right": 18},
+      "repeat_rows": "",
+      "repeat_columns": "",
+      "horizontal_breaks_before": [],
+      "vertical_breaks_before": [],
+      "visible_column_widths": {},
+      "visible_row_heights_pt": {},
+      "border_repairs": []
+    }
+  ]
+}
