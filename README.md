@@ -68,6 +68,10 @@ PDF 자동 검사와 실제 이미지 검토를 함께 수행해야 합니다. �
 - 인쇄 작업 중 발견한 원본의 수량·규격 불일치는 임의 수정하지 않고 별도 확인사항으로 알립니다.
 - Excel COM 오류나 누락된 의존성이 있으면 작업을 중단하고 확인하지 못한 범위를 명시합니다.
 
+### 현재 검증 범위
+
+자동 회귀 테스트는 합성 워크북·PDF와 모의 Excel COM을 사용합니다. 구조 비교 도구는 실제 `.xls`와 `.xlsx` 사례에서도 확인했습니다. 현재 개발 환경에서는 Excel COM 서버가 새 인스턴스 실행을 거부하여 **새 COM 비교 도구의 실제 Excel 연결 시험은 완료하지 못했습니다**. 해당 도구는 사용 환경에서 별도 확인해야 합니다.
+
 ## English
 
 ### What it does
@@ -131,6 +135,10 @@ When the same request, source, plan and output are still `verified`, reuse the e
 - Actual printer margins and drivers can change pagination.
 - Report pre-existing quantity/specification discrepancies separately and do not silently alter engineering data during print formatting.
 - If Excel COM or a required dependency is unavailable, report which checks could not be performed.
+
+### Current validation coverage
+
+The automated regression suite uses synthetic workbooks and PDFs and a mocked Excel COM interface. The structural comparison helper was also checked against real `.xls` and `.xlsx` examples. In the current development environment the Excel COM server refused to start a new instance, so the **new COM comparison helper has not yet been verified against a live Excel instance**. Validate that helper separately in the target environment.
 
 ## Repository layout
 
